@@ -1,0 +1,39 @@
+      <header class="ova-screen__head" data-reveal>
+        <div class="ova-screen__eyebrow">Evaluación</div>
+        <h1 class="ova-screen__title">Evaluación</h1>
+      </header>
+
+      <!-- Evaluación estándar: sin cabecera superior; el tema va dentro de cada actividad;
+           la franja inferior lleva anterior · progreso · contador · siguiente.
+           Enunciados, opciones y respuesta correcta: literales del documento de evaluación. -->
+      <div class="ova-evalquiz" data-ova-evalquiz data-label-item="Actividad" data-label-items="actividades" data-reveal>
+
+        <div class="ova-evalquiz__slide is-active" data-slide="intro">
+          <div class="ova-eval__cuerpo">
+            <p class="ova-eval__lead" data-ova-hueco="presentación de la evaluación, literal del documento de evaluación"></p>
+            <div data-ova-hueco="los datos de la evaluación: cuántas actividades, de qué tipos y que hay retroalimentación"></div>
+            <button class="ova-evalquiz__btn ova-evalquiz__btn--primary" data-evalquiz-go="1">Comenzar <iconify-icon icon="mdi:arrow-right"></iconify-icon></button>
+          </div>
+        </div>
+
+        <div class="ova-evalquiz__slide" data-slide="a1">
+          <div class="ova-eval__cuerpo">
+            <div data-ova-hueco="actividad 1 del documento de evaluación: tema, enunciado, opciones y retroalimentación literales"></div>
+          </div>
+        </div>
+
+        <div class="ova-evalquiz__slide" data-slide="cierre">
+          <div class="ova-eval__cuerpo">
+            <h2>Evaluación completada</h2>
+            <p style="max-width:60ch;">Repasar las retroalimentaciones vale tanto como acertar.</p>
+            <button class="ova-evalquiz__btn" data-evalquiz-restart style="margin-top:22px;"><iconify-icon icon="mdi:refresh"></iconify-icon> Volver a intentarlo</button>
+          </div>
+        </div>
+
+        <div class="ova-evalquiz__nav" data-evalquiz-nav>
+          <button class="ova-evalquiz__btn ova-evalquiz__btn--prev" data-evalquiz-prev aria-label="Actividad anterior" title="Anterior"><iconify-icon icon="mdi:arrow-left"></iconify-icon></button>
+          <div class="ova-evalquiz__progress-bar"><div class="ova-evalquiz__progress-fill" data-evalquiz-progress></div></div>
+          <span class="ova-evalquiz__counter" data-evalquiz-counter></span>
+          <button class="ova-evalquiz__btn ova-evalquiz__btn--primary" data-evalquiz-next>Siguiente <iconify-icon icon="mdi:arrow-right"></iconify-icon></button>
+        </div>
+      </div>

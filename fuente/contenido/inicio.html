@@ -1,0 +1,115 @@
+<style>
+  /* =========================================================
+     PORTADA WAYGROUP · fondo fotográfico + personaje flotante + curva
+     (el CSS de portada viaja por curso — decisión E5)
+     ========================================================= */
+  .wg-portada{
+    position:relative; overflow:hidden; isolation:isolate;
+    min-height:100vh; min-height:100dvh;
+    background:
+      linear-gradient(100deg, color-mix(in srgb, var(--c-deep) 92%, black) 0%,
+                              color-mix(in srgb, var(--c-deep) 55%, transparent) 55%,
+                              color-mix(in srgb, var(--c-deep) 30%, transparent) 100%),
+      url('assets/img/curso/portada-fondo.webp') center/cover no-repeat;
+    display:flex; align-items:center;
+  }
+  .wg-portada__curva{
+    position:absolute; right:-40px; bottom:-30px; width:min(48vw, 640px); z-index:1;
+    pointer-events:none; user-select:none;
+  }
+  .wg-portada__person{
+    position:absolute; right:clamp(16px, 8vw, 140px); bottom:0; height:min(86vh, 780px); z-index:2;
+    pointer-events:none; user-select:none;
+    filter: drop-shadow(0 30px 60px rgba(0,0,0,.45));
+  }
+  .wg-portada__logo{
+    position:absolute; top:28px; right:36px; z-index:4;
+  }
+  .wg-portada__logo img{
+    height:84px; width:auto; display:block;
+    filter: brightness(0) invert(1);   /* placeholder blanco hasta recibir el logo definitivo */
+  }
+  .wg-portada__text{
+    position:relative; z-index:3; max-width:640px;
+    padding: clamp(32px, 6vw, 96px);
+  }
+  .wg-portada__title{
+    margin:0 0 26px; font-family:var(--font-display); line-height:1.04; letter-spacing:-.02em;
+  }
+  .wg-portada__title span{ display:block; }
+  .wg-portada__title .suave { color:var(--c-acento); font-weight:400; font-size:clamp(2.4rem,5vw,4rem); opacity:.95; }
+  .wg-portada__title .fuerte{ color:#fff;            font-weight:800; font-size:clamp(2.6rem,5.6vw,4.4rem); }
+  .wg-portada__title .sigla { color:var(--c-acento); font-weight:800; font-size:clamp(2.4rem,5vw,4rem); }
+  .wg-portada__intro{
+    color:color-mix(in srgb, #fff 82%, transparent); font-size:1.06rem; line-height:1.65;
+    max-width:520px; margin:0 0 36px;
+  }
+  .wg-portada__cta{
+    display:inline-flex; align-items:center; gap:10px;
+    background:var(--c-acento); color:#fff; text-decoration:none;
+    font-family:var(--font-display); font-weight:700; font-size:1rem;
+    padding:16px 30px; border-radius:999px;
+    box-shadow:0 14px 34px color-mix(in srgb, var(--c-acento) 45%, transparent);
+    transition:transform .18s ease, box-shadow .18s ease;
+  }
+  .wg-portada__cta:hover{ color:#fff; transform:translateY(-2px); box-shadow:0 20px 44px color-mix(in srgb, var(--c-acento) 55%, transparent); }
+  @media (max-width: 900px){
+    .wg-portada__person{ opacity:.34; right:-10vw; }
+    .wg-portada__logo img{ height:60px; }
+  }
+
+  /* DISEÑO (extintores → estándar): intro en blanco, aire del compuesto, curva a su tamaño
+     (Curva.png mide 719 px) */
+  .wg-portada__title{ margin-bottom:40px; }
+  .wg-portada__intro{ color:#fff; max-width:560px; margin-bottom:52px; }
+  .wg-portada__curva{ right:0; bottom:0; width:min(50vw,719px); }
+
+  /* DISEÑO (plan del diagramador 2026-11-19): el título va en dos líneas del mismo cuerpo y
+     peso, con «livianos» en acento dentro de la segunda, como en Portada.png. Con la columna
+     de 640 de la semilla «en vehículos livianos» se partía en dos */
+  .wg-portada__text{ max-width:960px; }
+  .wg-portada__title .fuerte{ font-size:clamp(2.4rem, 5vw, 4rem); }
+  .wg-portada__title .fuerte .sigla{ display:inline; font-size:inherit; }
+
+  /* DISEÑO: la persona a su alto nativo (Person.png mide 607 px; estirarla a 780 la
+     desenfoca) y pegada al borde derecho como en el compuesto. Pedir al diseñador
+     ≥ 1150 px de alto; cuando llegue, se retira la regla de height */
+  .wg-portada__person{ height:min(86vh, 607px); right:clamp(16px, 2vw, 32px); }
+
+  /* la persona tenue hasta 1180 px para que no pise el texto en tablet (extintores) */
+  @media (max-width: 1180px){ .wg-portada__person{ opacity:.34; right:-10vw; } }
+
+  /* DISEÑO (revisión del diagramador 2026-11-20): en teléfono el título reserva la franja del
+     logo (28 + 60 px; a 360×640 el logo tapaba «vial») y baja de cuerpo para conservar las dos
+     líneas del compuesto */
+  @media (max-width: 600px){
+    .wg-portada__text{ padding-top:112px; }
+    .wg-portada__title{ margin-bottom:24px; }
+    .wg-portada__title .fuerte{ font-size:min(8.2vw, 2.4rem); }
+    .wg-portada__intro{ margin-bottom:32px; }
+  }
+</style>
+
+<section class="wg-portada">
+  <img class="wg-portada__curva"  src="assets/img/curso/portada-curva.webp" alt="" aria-hidden="true" />
+  <img class="wg-portada__person" src="assets/img/curso/portada-person.webp" alt="" aria-hidden="true" />
+  <div class="wg-portada__logo" aria-hidden="true">
+    <img src="assets/img/logos/waygroup-for-education.svg" alt="WAYGROUP for education" />
+  </div>
+  <div class="wg-portada__text">
+    <!-- Título literal del DI, en dos líneas del mismo peso como en Recursos_Portada_HTML/Portada.png
+         del diseñador; «livianos» en acento (el Word no marca remate: lo eligió el diagramador) -->
+    <h1 class="wg-portada__title">
+      <span class="fuerte">Seguridad vial</span>
+      <span class="fuerte">en vehículos <span class="sigla">livianos</span></span>
+    </h1>
+    <!-- Intro = el Objetivo del DI, repetido (estándar Waygroup; el compuesto trae Lorem ipsum).
+         Aprobado por el arquitecto el 2026-11-19 -->
+    <p class="wg-portada__intro">
+      Al finalizar el curso, el participante estará en capacidad de: identificar la normativa y los documentos exigidos para conducir un vehículo liviano en Colombia; reconocer los factores de riesgo del clima, la vía, el vehículo y el conductor; seleccionar la técnica de conducción defensiva para proteger a los actores viales vulnerables; y decidir cuándo detener la marcha y cómo actuar tras una falla o un siniestro vial.
+    </p>
+    <a class="wg-portada__cta" href="presentacion.html">
+      Comenzar el curso <iconify-icon icon="mdi:arrow-right"></iconify-icon>
+    </a>
+  </div>
+</section>

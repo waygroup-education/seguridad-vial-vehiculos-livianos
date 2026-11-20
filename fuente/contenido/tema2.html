@@ -1,0 +1,167 @@
+<style>
+  /* DISEÑO (revisión del diagramador, arquitecto 2026-11-20): la lista dentro de un recuadro va en
+     el mismo registro que su párrafo (.95rem) */
+  .ova-callout li { font-size: .95rem; }
+  /* DISEÑO (arquitecto 2026-11-20): las cuatro figuras del acordeón de 2.1 al mismo ancho, con tope
+     de 640 px (la Imagen 8 llegó de 800 px y las 9 a 11 de 1000: cambiaban de ancho al pasar de ítem) */
+  .ova-acordeon__body-inner > .ova-figura--plana img { width: 100%; max-width: 640px; }
+</style>
+      <header class="ova-screen__head" data-reveal>
+        <div class="ova-screen__eyebrow">Tema {{NUM}}</div>
+        <h1 class="ova-screen__title">Factores de riesgo en la conducción</h1>
+      </header>
+
+      <!-- Situación de partida · el texto es el cuadro (tabla 1×1) del Word bajo «Situación de partida:» -->
+      <div data-reveal style="margin-bottom:40px; padding:32px; background:linear-gradient(135deg, color-mix(in srgb, var(--c-acento) 10%, var(--bg-surface)) 0%, var(--bg-surface) 60%); border:1px solid color-mix(in srgb, var(--c-acento) 30%, var(--border-c)); border-radius:var(--r-lg); position:relative; overflow:hidden;">
+        <h3 style="font-family:var(--font-mono); font-size:.78rem; letter-spacing:.18em; text-transform:uppercase; color:var(--c-acento); margin:0 0 16px; display:flex; align-items:center; gap:10px;"><iconify-icon icon="mdi:comment-question-outline" style="font-size:1.1rem;"></iconify-icon> Situación de partida</h3>
+        <p style="margin:0; font-size:1.02rem; line-height:1.6;">Son las once de la noche y el cansancio empieza a pasar factura. “Ya casi llego”, se consuela el conductor, confiado en que ha manejado exhausto otras veces sin consecuencias.</p>
+        <p style="margin:14px 0 0; font-size:1.02rem; line-height:1.6;"><strong>Sin embargo, antes de seguir, vale la pena reflexionar:</strong> ¿por qué la suerte del pasado no es una garantía de seguridad para el presente?</p>
+      </div>
+
+      <!-- ════ Sección {{NUM}}.1 · tema2-1 ════ -->
+      <section class="ova-seccion" id="tema2-1" data-reveal>
+        <h2 class="ova-seccion__titulo">Factores climáticos</h2>
+      </section>
+
+      <p data-reveal>Entender cómo el entorno afecta a tu vehículo es clave para prevenir siniestros viales. A continuación, te damos a conocer los principales factores de riesgo y cómo reaccionar ante ellos:</p>
+
+      <!-- El DI: "Acordeón" · cada ítem trae en el Word su figura (Imágenes 8 a 11, sin texto) y dos viñetas. DISEÑO: figura arriba y viñetas debajo, en el orden del Word; alerta para «El riesgo.» y check para «Cómo actuar.» (arquitecto 2026-11-20) -->
+      <div class="ova-acordeon" data-reveal style="margin-top:16px;">
+        <div class="ova-acordeon__item is-open">
+          <button class="ova-acordeon__head"><span><span class="num">01</span> <strong>La lluvia</strong></span><iconify-icon class="ova-acordeon__chev" icon="mdi:chevron-down"></iconify-icon></button>
+          <div class="ova-acordeon__body"><div class="ova-acordeon__body-inner"><figure class="ova-figura ova-figura--plana">
+  <img src="assets/img/curso/figura-08-lluvia.webp" alt="Dos vehículos bajo la lluvia con la distancia entre ambos marcada; debajo, una llanta con labrado que evacúa el agua (correcto) y una llanta lisa que flota sobre el agua (incorrecto)." />
+</figure><ul style="list-style:none; padding:0; margin:0; display:grid; gap:10px;"><li style="display:flex; gap:10px; align-items:flex-start;"><iconify-icon icon="mdi:alert-outline" style="color:var(--warning); font-size:1.1rem; margin-top:3px; flex-shrink:0;"></iconify-icon><span><strong>El riesgo.</strong> Reduce drásticamente la adherencia de los neumáticos y puede duplicar la distancia de frenado. También puede provocar hidroplaneo: cuando la llanta flota sobre el agua y pierdes el control del vehículo.</span></li><li style="display:flex; gap:10px; align-items:flex-start;"><iconify-icon icon="mdi:check-circle-outline" style="color:var(--success); font-size:1.1rem; margin-top:3px; flex-shrink:0;"></iconify-icon><span><strong>Cómo actuar.</strong> Disminuye la velocidad de inmediato y aumenta considerablemente la distancia de seguridad con el vehículo de adelante.</span></li></ul></div></div>
+        </div>
+        <div class="ova-acordeon__item">
+          <button class="ova-acordeon__head"><span><span class="num">02</span> <strong>La neblina</strong></span><iconify-icon class="ova-acordeon__chev" icon="mdi:chevron-down"></iconify-icon></button>
+          <div class="ova-acordeon__body"><div class="ova-acordeon__body-inner"><figure class="ova-figura ova-figura--plana">
+  <img src="assets/img/curso/figura-09-neblina.webp" alt="Vía con neblina, con la distancia al vehículo de adelante marcada y un faro antiniebla encendido; a la derecha, la vista desde el volante con luces bajas (correcto) y con luces altas que se reflejan en la neblina (incorrecto)." />
+</figure><ul style="list-style:none; padding:0; margin:0; display:grid; gap:10px;"><li style="display:flex; gap:10px; align-items:flex-start;"><iconify-icon icon="mdi:alert-outline" style="color:var(--warning); font-size:1.1rem; margin-top:3px; flex-shrink:0;"></iconify-icon><span><strong>El riesgo.</strong> Reduce la visibilidad a niveles críticos.</span></li><li style="display:flex; gap:10px; align-items:flex-start;"><iconify-icon icon="mdi:check-circle-outline" style="color:var(--success); font-size:1.1rem; margin-top:3px; flex-shrink:0;"></iconify-icon><span><strong>Cómo actuar.</strong> Enciende las luces bajas y las antiniebla si tu vehículo las tiene. Mantén una distancia preventiva extrema. Evita las luces altas, debido a que se reflejan en las gotas de agua suspendidas y crean un “efecto espejo” que te cegará por completo.</span></li></ul></div></div>
+        </div>
+        <div class="ova-acordeon__item">
+          <button class="ova-acordeon__head"><span><span class="num">03</span> <strong>La noche</strong></span><iconify-icon class="ova-acordeon__chev" icon="mdi:chevron-down"></iconify-icon></button>
+          <div class="ova-acordeon__body"><div class="ova-acordeon__body-inner"><figure class="ova-figura ova-figura--plana">
+  <img src="assets/img/curso/figura-10-noche.webp" alt="Dos escenas nocturnas desde el volante: a exceso de velocidad, con la visión reducida al alcance de los faros (alerta), y a velocidad moderada (correcto); debajo, luces altas que encandilan al vehículo de frente (incorrecto) y luces bajas al cruzarse con otro (correcto)." />
+</figure><ul style="list-style:none; padding:0; margin:0; display:grid; gap:10px;"><li style="display:flex; gap:10px; align-items:flex-start;"><iconify-icon icon="mdi:alert-outline" style="color:var(--warning); font-size:1.1rem; margin-top:3px; flex-shrink:0;"></iconify-icon><span><strong>El riesgo.</strong> Conducir de noche es considerablemente más peligroso que de día. Tu campo de visión se reduce al alcance de tus faros, y se vuelve mucho más difícil calcular la velocidad y distancia de los demás vehículos.</span></li><li style="display:flex; gap:10px; align-items:flex-start;"><iconify-icon icon="mdi:check-circle-outline" style="color:var(--success); font-size:1.1rem; margin-top:3px; flex-shrink:0;"></iconify-icon><span><strong>Cómo actuar.</strong> Modera la velocidad. Utiliza las luces altas solo en carreteras sin iluminación y sin vehículos de frente o adelante, asegurándote de cambiarlas a bajas en cuanto aparezca otro conductor para no encandilarlo.</span></li></ul></div></div>
+        </div>
+        <div class="ova-acordeon__item">
+          <button class="ova-acordeon__head"><span><span class="num">04</span> <strong>El viento fuerte</strong></span><iconify-icon class="ova-acordeon__chev" icon="mdi:chevron-down"></iconify-icon></button>
+          <div class="ova-acordeon__body"><div class="ova-acordeon__body-inner"><figure class="ova-figura ova-figura--plana">
+  <img src="assets/img/curso/figura-11-viento.webp" alt="Ráfagas laterales empujan un vehículo en un puente; manos firmes sobre el volante; secuencia de tres momentos en que el vehículo vuelve a su carril con una corrección suave." />
+</figure><ul style="list-style:none; padding:0; margin:0; display:grid; gap:10px;"><li style="display:flex; gap:10px; align-items:flex-start;"><iconify-icon icon="mdi:alert-outline" style="color:var(--warning); font-size:1.1rem; margin-top:3px; flex-shrink:0;"></iconify-icon><span><strong>El riesgo.</strong> Las ráfagas laterales, especialmente en zonas despejadas o al adelantar camiones, pueden desestabilizar el vehículo y desviarte de la ruta en un segundo.</span></li><li style="display:flex; gap:10px; align-items:flex-start;"><iconify-icon icon="mdi:check-circle-outline" style="color:var(--success); font-size:1.1rem; margin-top:3px; flex-shrink:0;"></iconify-icon><span><strong>Cómo actuar.</strong> Sujeta el volante con firmeza con ambas manos. Si sientes un empuje, corrige el rumbo de manera suave y progresiva; un volantazo brusco podría hacerte perder el control.</span></li></ul></div></div>
+        </div>
+      </div>
+
+      <!-- «Importante»: el párrafo y las cuatro viñetas del Word, como lista (arquitecto 2026-11-20) -->
+      <div class="ova-callout" style="margin-top:32px;" data-reveal>
+        <div class="ova-callout__ico"><iconify-icon icon="mdi:information-outline"></iconify-icon></div>
+        <div><span class="ova-callout__tag">Importante</span><p style="margin:8px 0 0;">Recuerda que el Artículo 74 del Código Nacional de Tránsito te obliga a reducir la velocidad a un máximo de 30 km/h en las siguientes situaciones:</p><ul style="list-style:none; padding:0; margin:12px 0 0; display:grid; gap:10px;"><li style="display:flex; gap:10px; align-items:flex-start;"><iconify-icon icon="mdi:check-circle-outline" style="color:var(--c-acento); font-size:1.1rem; margin-top:3px; flex-shrink:0;"></iconify-icon><span>Zonas residenciales, escolares o de alta concentración de personas.</span></li><li style="display:flex; gap:10px; align-items:flex-start;"><iconify-icon icon="mdi:check-circle-outline" style="color:var(--c-acento); font-size:1.1rem; margin-top:3px; flex-shrink:0;"></iconify-icon><span>Cuando la visibilidad sea deficiente (debido a lluvia, neblina o noche).</span></li><li style="display:flex; gap:10px; align-items:flex-start;"><iconify-icon icon="mdi:check-circle-outline" style="color:var(--c-acento); font-size:1.1rem; margin-top:3px; flex-shrink:0;"></iconify-icon><span>Al aproximarte a una intersección.</span></li><li style="display:flex; gap:10px; align-items:flex-start;"><iconify-icon icon="mdi:check-circle-outline" style="color:var(--c-acento); font-size:1.1rem; margin-top:3px; flex-shrink:0;"></iconify-icon><span>Cuando las señales de tránsito así lo ordenen.</span></li></ul></div>
+      </div>
+
+      <!-- ════ Sección {{NUM}}.2 · tema2-2 ════ -->
+      <section class="ova-seccion" id="tema2-2" data-reveal>
+        <h2 class="ova-seccion__titulo">Factores personales</h2>
+      </section>
+
+      <p data-reveal>También existen factores personales que alteran la capacidad de conducción y elevan drásticamente el riesgo de siniestros viales. A continuación, se detallan los más críticos:</p>
+
+      <!-- El DI: "Acordeón" -->
+      <div class="ova-acordeon" data-reveal style="margin-top:16px;">
+        <div class="ova-acordeon__item is-open">
+          <button class="ova-acordeon__head"><span><span class="num">01</span> <strong>El microsueño</strong></span><iconify-icon class="ova-acordeon__chev" icon="mdi:chevron-down"></iconify-icon></button>
+          <div class="ova-acordeon__body"><div class="ova-acordeon__body-inner">Es un episodio breve e involuntario de sueño que puede durar solo unos segundos, suficiente para que un vehículo recorra una distancia considerable sin ningún control por parte del conductor. La fatiga, la falta de sueño y la conducción prolongada aumentan la probabilidad de experimentarlo, y su peligro está en que no avisa con anticipación suficiente para reaccionar.</div></div>
+        </div>
+        <div class="ova-acordeon__item">
+          <button class="ova-acordeon__head"><span><span class="num">02</span> <strong>Conducir bajo los efectos del alcohol</strong></span><iconify-icon class="ova-acordeon__chev" icon="mdi:chevron-down"></iconify-icon></button>
+          <div class="ova-acordeon__body"><div class="ova-acordeon__body-inner">Reduce los reflejos, ralentiza los tiempos de reacción, nubla la visión periférica y altera el juicio para tomar decisiones seguras. La Ley 1696 de 2013 establece cuatro grados de alcoholemia. El Grado 0 inicia desde los 20 mg de etanol por cada 100 ml de sangre, umbral a partir del cual se aplican multas económicas y la suspensión de la licencia de conducción. Los grados son: grado 0, de 20 a 39 mg; grado 1, de 40 a 99 mg; grado 2, de 100 a 149 mg, y grado 3, desde 150 mg de etanol por cada 100 ml de sangre; las sanciones aumentan con cada grado y con la reincidencia. Negarse a la prueba de alcoholemia acarrea la sanción administrativa más alta del artículo 152 del Código. La regla más segura es sencilla: si consumiste alcohol, no conduces.</div></div>
+        </div>
+        <div class="ova-acordeon__item">
+          <button class="ova-acordeon__head"><span><span class="num">03</span> <strong>Hablar por celular o revisar mensajes mientras se conduce</strong></span><iconify-icon class="ova-acordeon__chev" icon="mdi:chevron-down"></iconify-icon></button>
+          <div class="ova-acordeon__body"><div class="ova-acordeon__body-inner">Dividir la atención entre la pantalla y el entorno anula la capacidad de anticipación en la vía. Un vehículo que transita a 50 km/h recorre casi 14 metros por segundo. Los tres segundos que toma desviar la mirada para revisar una notificación equivalen a avanzar más de 40 metros a ciegas. Esta alarmante distancia explica la gravedad del problema planteado al inicio.</div></div>
+        </div>
+        <div class="ova-acordeon__item">
+          <button class="ova-acordeon__head"><span><span class="num">04</span> <strong>Exceso de velocidad</strong></span><iconify-icon class="ova-acordeon__chev" icon="mdi:chevron-down"></iconify-icon></button>
+          <div class="ova-acordeon__body"><div class="ova-acordeon__body-inner"><p style="margin:0;">Reduce drásticamente el margen de maniobra para esquivar un imprevisto y multiplica de forma exponencial la energía del impacto en caso de colisión.</p><p style="margin:12px 0 0;">Conforme a la Ley 2251 de 2022, los límites máximos permitidos en Colombia, salvo que la señalización indique un límite menor, son: 30 km/h en zonas escolares y residenciales; 50 km/h en vías urbanas y carreteras municipales; 90 km/h en carreteras nacionales y departamentales, y hasta 120 km/h solo en tramos de doble calzada así señalizados.</p></div></div>
+        </div>
+        <div class="ova-acordeon__item">
+          <button class="ova-acordeon__head"><span><span class="num">05</span> <strong>Estado emocional del conductor</strong></span><iconify-icon class="ova-acordeon__chev" icon="mdi:chevron-down"></iconify-icon></button>
+          <div class="ova-acordeon__body"><div class="ova-acordeon__body-inner">Una discusión reciente, el enojo o el estrés acumulado afectan la paciencia frente al tráfico y pueden traducirse en maniobras más agresivas de lo habitual, como seguir demasiado cerca de otro vehículo o forzar un adelantamiento innecesario. Reconocer ese estado antes de tomar el volante, y no solo la fatiga o el alcohol, forma parte de una conducción responsable.</div></div>
+        </div>
+      </div>
+
+      <!-- «Ten en cuenta»: «(SMDLV)» literal · ERRORES-ORIGEN-2026-11-19 F1 (no bloquea) -->
+      <div class="ova-callout" style="margin-top:32px;" data-reveal>
+        <div class="ova-callout__ico"><iconify-icon icon="mdi:lightbulb-on"></iconify-icon></div>
+        <div><span class="ova-callout__tag">Ten en cuenta</span><p style="margin:8px 0 0;">El artículo 131 del Código Nacional de Tránsito sanciona con la misma gravedad el exceso de velocidad y el uso del celular al conducir. Ambas conductas pertenecen a la misma categoría de infracción y conllevan una multa de 15 salarios mínimos legales diarios vigentes (SMDLV).</p></div>
+      </div>
+
+      <div class="ova-callout" style="margin-top:24px;" data-reveal>
+        <div class="ova-callout__ico"><iconify-icon icon="mdi:information-outline"></iconify-icon></div>
+        <div><span class="ova-callout__tag">Importante</span><p style="margin:8px 0 0;">El microsueño y el alcohol comparten el mismo peligro invisible: la falsa sensación de control. Quien los padece cree que domina la situación cuando ya ha perdido sus reflejos. Por eso, la decisión de detenerse jamás debe depender de cómo se sienta el conductor en el momento.</p></div>
+      </div>
+
+      <!-- Figura 12 del diseñador (Imagen 12) -->
+      <figure class="ova-figura ova-figura--plana" data-reveal style="margin-top:32px;">
+        <img src="assets/img/curso/figura-12-distraccion-fatiga-velocidad.webp" alt="La distracción, la fatiga y el exceso de velocidad son factores de riesgo frecuentes en los siniestros viales en Colombia, según estudios de la Agencia Nacional de Seguridad Vial (ANSV). Distracción: desvía la atención del conductor y reduce su capacidad de respuesta ante cualquier cambio en la vía. Fatiga: disminuye el estado de alerta, altera la percepción y aumenta el riesgo de errores al conducir. Exceso de velocidad: reduce el tiempo para reaccionar y agrava las consecuencias de cualquier incidente. Estas condiciones casi nunca aparecen solas: se combinan entre sí, y basta con que una de las tres esté presente para convertir un trayecto habitual en una emergencia." />
+      </figure>
+
+      <!-- Cierre del caso de partida · mismo panel que la Situación de partida, sin rótulo (el DI no lo trae; criterio del arquitecto 2026-11-20) -->
+      <div data-reveal style="padding:32px; background:linear-gradient(135deg, color-mix(in srgb, var(--c-acento) 10%, var(--bg-surface)) 0%, var(--bg-surface) 60%); border:1px solid color-mix(in srgb, var(--c-acento) 30%, var(--border-c)); border-radius:var(--r-lg); position:relative; overflow:hidden;">
+        <p style="margin:0; font-size:1.02rem; line-height:1.6;">Volviendo a la situación de partida: haber conducido cansado y sin consecuencias no disminuye el peligro. El microsueño aparece sin previo aviso: a 80 km/h, bastan solo tres segundos para que el vehículo recorra 67 metros completamente fuera de control.</p>
+      </div>
+
+      <!-- ════ Sección {{NUM}}.3 · tema2-3 ════ -->
+      <section class="ova-seccion" id="tema2-3" data-reveal>
+        <h2 class="ova-seccion__titulo">Factores de la vía</h2>
+      </section>
+
+      <p data-reveal>Las curvas exigen adaptar la velocidad antes de entrar en ellas, nunca durante:</p>
+
+      <!-- Figura 13 del diseñador (Imagen 13): completa la frase que termina en dos puntos. Duda D12 (frase repetida dentro de la figura), no bloquea -->
+      <figure class="ova-figura ova-figura--plana" data-reveal style="margin-top:16px;">
+        <img src="assets/img/curso/figura-13-curvas.webp" alt="Cuanto más cerrado el radio de la curva, mayor la fuerza que empuja al vehículo hacia afuera, y un conductor que entra con exceso de velocidad corre el riesgo de derrapar o salirse de la vía. Curva más abierta: menor fuerza a la salida de la curva. Curva más cerrada: mayor fuerza a la salida de la curva. Un conductor que entra con exceso de velocidad corre el riesgo de derrapar o salirse de la vía. La carga del vehículo también influye: entre más carga se lleve, mayor la precaución que exige tomar la curva. Curva cerrada + Exceso de velocidad + Mayor carga = Mayor riesgo." />
+      </figure>
+
+      <p data-reveal>Los animales sueltos en la vía, situación habitual en zonas rurales, exigen reducir la velocidad de inmediato y estar alerta para esquivarlos mediante maniobras suaves. Evita frenazos o giros bruscos, puesto que estos pueden provocar la pérdida absoluta del control del vehículo.</p>
+
+      <div class="ova-callout" style="margin-top:24px;" data-reveal>
+        <div class="ova-callout__ico"><iconify-icon icon="mdi:lightbulb-on"></iconify-icon></div>
+        <div><span class="ova-callout__tag">Ten en cuenta</span><p style="margin:8px 0 0;">La berma es la franja lateral que soporta la calzada, destinada al tránsito de peatones y, ocasionalmente, al estacionamiento de vehículos y al paso de vehículos de emergencia (Ley 769 de 2002, art. 2). Está prohibido adelantar por ella o usarla como carril.</p></div>
+      </div>
+
+      <p data-reveal style="margin-top:32px;">Cerca de una bocacalle, el punto donde una calle desemboca en una intersección, la visibilidad suele reducirse por vehículos estacionados o construcciones cercanas, lo que exige una aproximación más lenta y atenta que en un tramo recto de vía.</p>
+      <p data-reveal>Los huecos, los derrames de aceite o combustible, el material suelto y las obras exigen reducir la velocidad con anticipación. No los esquives con un giro brusco: frena de forma progresiva antes de llegar y pasa con las llantas rectas.</p>
+
+      <!-- ════ Sección {{NUM}}.4 · tema2-4 ════ -->
+      <section class="ova-seccion" id="tema2-4" data-reveal>
+        <h2 class="ova-seccion__titulo">Factores mecánicos</h2>
+      </section>
+
+      <p data-reveal>El propietario o tenedor de un vehículo tiene la obligación legal (artículo 50 de la Ley 769 de 2002) de mantenerlo en óptimas condiciones mecánicas y de seguridad:</p>
+
+      <!-- El DI: "Acordeón" -->
+      <div class="ova-acordeon" data-reveal style="margin-top:16px;">
+        <div class="ova-acordeon__item is-open">
+          <button class="ova-acordeon__head"><span><span class="num">01</span> <strong>Neumáticos</strong></span><iconify-icon class="ova-acordeon__chev" icon="mdi:chevron-down"></iconify-icon></button>
+          <div class="ova-acordeon__body"><div class="ova-acordeon__body-inner">Los neumáticos desgastados, lisos o con presión inadecuada reducen drásticamente la adherencia, la estabilidad y la capacidad de frenado. Un labrado profundo y la presión correcta aseguran la tracción y permiten evacuar el agua eficazmente, evitando el hidroplaneo.</div></div>
+        </div>
+        <div class="ova-acordeon__item">
+          <button class="ova-acordeon__head"><span><span class="num">02</span> <strong>Frenos</strong></span><iconify-icon class="ova-acordeon__chev" icon="mdi:chevron-down"></iconify-icon></button>
+          <div class="ova-acordeon__body"><div class="ova-acordeon__body-inner">Un sistema de frenos defectuoso compromete de forma directa la seguridad vial. Señales de alerta como un pedal esponjoso, ruidos extraños al frenar o un nivel bajo en el líquido de frenos exigen una revisión técnica inmediata.</div></div>
+        </div>
+        <div class="ova-acordeon__item">
+          <button class="ova-acordeon__head"><span><span class="num">03</span> <strong>Fluidos, dirección y suspensión</strong></span><iconify-icon class="ova-acordeon__chev" icon="mdi:chevron-down"></iconify-icon></button>
+          <div class="ova-acordeon__body"><div class="ova-acordeon__body-inner">Los niveles bajos de aceite, refrigerante o líquido de frenos desgastan el motor y comprometen la fiabilidad del vehículo. Asimismo, los fallos en la dirección o la suspensión pueden provocar una pérdida súbita del control. La mayoría de estas alertas se anticipan mediante los testigos del tablero; ignorar estos avisos convierte fallas menores en riesgos catastróficos.</div></div>
+        </div>
+        <div class="ova-acordeon__item">
+          <button class="ova-acordeon__head"><span><span class="num">04</span> <strong>Luces y sistema eléctrico</strong></span><iconify-icon class="ova-acordeon__chev" icon="mdi:chevron-down"></iconify-icon></button>
+          <div class="ova-acordeon__body"><div class="ova-acordeon__body-inner">Las luces dañadas reducen la visibilidad del conductor e impiden la comunicación vital con otros actores viales a través de direccionales o luces de freno. Además, los fallos eléctricos afectan desde el encendido hasta las alertas del tablero. Garantizar el buen estado de estos componentes requiere revisiones preventivas periódicas, sin esperar a que el vehículo falle por completo.</div></div>
+        </div>
+      </div>
+
+      <!-- «Buena práctica»: el párrafo y las tres viñetas del Word, como lista -->
+      <div class="ova-callout ova-callout--success" style="margin-top:32px;" data-reveal>
+        <div class="ova-callout__ico"><iconify-icon icon="mdi:check-circle-outline"></iconify-icon></div>
+        <div><span class="ova-callout__tag">Buena práctica</span><p style="margin:8px 0 0;">Antes de emprender un viaje largo, es fundamental verificar el pronóstico del clima y el estado mecánico del vehículo, evitando asumir que las condiciones serán óptimas durante el trayecto. Asimismo, si conduces para una organización, recuerda realizar la inspección preoperacional diaria exigida por el Plan Estratégico de Seguridad Vial (PESV). Esta revisión debe incluir obligatoriamente:</p><ul style="list-style:none; padding:0; margin:12px 0 0; display:grid; gap:10px;"><li style="display:flex; gap:10px; align-items:flex-start;"><iconify-icon icon="mdi:check-circle-outline" style="color:var(--success); font-size:1.1rem; margin-top:3px; flex-shrink:0;"></iconify-icon><span><strong>Llantas.</strong> Presión recomendada por el fabricante y profundidad de labrado no inferior a 1,6 mm.</span></li><li style="display:flex; gap:10px; align-items:flex-start;"><iconify-icon icon="mdi:check-circle-outline" style="color:var(--success); font-size:1.1rem; margin-top:3px; flex-shrink:0;"></iconify-icon><span><strong>Sistemas clave.</strong> Frenos, luces y niveles de líquidos.</span></li><li style="display:flex; gap:10px; align-items:flex-start;"><iconify-icon icon="mdi:check-circle-outline" style="color:var(--success); font-size:1.1rem; margin-top:3px; flex-shrink:0;"></iconify-icon><span><strong>Seguridad y visibilidad.</strong> Espejos, cinturones de seguridad y el equipo de prevención y seguridad vial.</span></li></ul></div>
+      </div>

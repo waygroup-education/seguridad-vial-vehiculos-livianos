@@ -1,0 +1,162 @@
+      <header class="ova-screen__head" data-reveal>
+        <div class="ova-screen__eyebrow">Tema {{NUM}}</div>
+        <h1 class="ova-screen__title">Actuar ante una emergencia</h1>
+      </header>
+
+      <!-- Situación de partida · el texto es el cuadro (tabla 1×1) del Word bajo «Situación de partida:» -->
+      <div data-reveal style="margin-bottom:40px; padding:32px; background:linear-gradient(135deg, color-mix(in srgb, var(--c-acento) 10%, var(--bg-surface)) 0%, var(--bg-surface) 60%); border:1px solid color-mix(in srgb, var(--c-acento) 30%, var(--border-c)); border-radius:var(--r-lg); position:relative; overflow:hidden;">
+        <h3 style="font-family:var(--font-mono); font-size:.78rem; letter-spacing:.18em; text-transform:uppercase; color:var(--c-acento); margin:0 0 16px; display:flex; align-items:center; gap:10px;"><iconify-icon icon="mdi:comment-question-outline" style="font-size:1.1rem;"></iconify-icon> Situación de partida</h3>
+        <p style="margin:0; font-size:1.02rem; line-height:1.6;">Un choque simple en un semáforo. Un golpe leve entre dos autos, sin heridos, pero con la tensión al límite. Los conductores ya empiezan a discutir sobre quién tiene la responsabilidad de llamar al agente de tránsito para que levante el croquis.</p>
+        <p style="margin:14px 0 0; font-size:1.02rem; line-height:1.6;"><strong>Antes de recrear una escena similar, detente a pensar:</strong> desde la entrada en vigencia de la Ley 2251 de 2022, ¿realmente es obligatorio esperar a las autoridades cuando el siniestro vial solo deja daños materiales?</p>
+      </div>
+
+      <!-- ════ Sección {{NUM}}.1 · tema4-1 ════ -->
+      <section class="ova-seccion" id="tema4-1" data-reveal>
+        <h2 class="ova-seccion__titulo">Cuándo detener la marcha</h2>
+      </section>
+
+      <p data-reveal>Existen condiciones críticas que exigen detener el vehículo de inmediato. Ante la pérdida de facultades humanas o fallas técnicas graves, continuar la marcha nunca es una opción, sin importar la cercanía del destino.</p>
+
+      <!-- El DI: "Stepper" · tres pasos; «Condición N» es el título en negrilla del Word. El número 0N lo pone la pieza. Sin ova-step__tag -->
+      <div class="ova-stepper" data-reveal style="margin-top:16px;">
+        <div class="ova-step">
+          <div class="ova-step__num"><span>01</span></div>
+          <div class="ova-step__card"><h3><strong>Condición 1</strong></h3><p><strong>Cero alcohol al volante.</strong> Si consumiste alcohol, no conduzcas. Si ya estás en la vía, detente en un lugar seguro y pide un conductor elegido o un transporte alternativo, aunque te sientas bien. Estar consciente no garantiza que tus reflejos respondan a tiempo ante una emergencia.</p></div>
+        </div>
+        <div class="ova-step">
+          <div class="ova-step__num"><span>02</span></div>
+          <div class="ova-step__card"><h3><strong>Condición 2</strong></h3><p><strong>Alerta ante el microsueño.</strong> No intentes ganarle al cansancio. Ante los primeros síntomas de fatiga, como pesadez en los párpados, parpadeo constante o pérdidas momentáneas de atención, la única decisión correcta es orillarte con precaución. Un par de segundos de sueño pueden ser fatales; no esperes a llegar al siguiente punto de descanso.</p></div>
+        </div>
+        <div class="ova-step">
+          <div class="ova-step__num"><span>03</span></div>
+          <div class="ova-step__card"><h3><strong>Condición 3</strong></h3><p><strong>Testigos rojos en el tablero.</strong> Las alertas de color rojo en el panel de instrumentos (como presión de aceite, temperatura o sistema de frenos) notifican fallas que comprometen la seguridad del vehículo y de sus ocupantes. Detén la marcha de inmediato en una zona segura: la gravedad de la avería técnica es la que manda, no la distancia que te falta para llegar.</p></div>
+        </div>
+      </div>
+
+      <!-- ════ Sección {{NUM}}.2 · tema4-2 ════ -->
+      <section class="ova-seccion" id="tema4-2" data-reveal>
+        <h2 class="ova-seccion__titulo">Qué hacer ante una falla en ruta</h2>
+      </section>
+
+      <p data-reveal>Te invitamos a ver el siguiente video, donde aprenderás cómo actuar ante una falla en ruta, como un pinchazo, un bache en la vía o un testigo de alerta grave, y de qué manera advertir correctamente a los demás conductores mientras solucionas el inconveniente.</p>
+
+      <!-- Video 3 (el DI: «(Vincular video 3)»): enlace de YouTube del Word, verificado (ERRORES-ORIGEN-2026-11-19 §4) -->
+      <div class="ova-video" data-reveal style="margin-top:32px;">
+        <div class="ova-video__frame" style="position:relative; padding-top:56.25%; border-radius:var(--r-lg); overflow:hidden; background:#000;">
+          <iframe src="https://www.youtube.com/embed/ZdHEnkql7qw" title="Video 3 · Qué hacer ante una falla en ruta" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen style="position:absolute; inset:0; width:100%; height:100%;"></iframe>
+        </div>
+      </div>
+
+      <!-- ════ Sección {{NUM}}.3 · tema4-3 ════ -->
+      <section class="ova-seccion" id="tema4-3" data-reveal>
+        <h2 class="ova-seccion__titulo">Protocolo después de un siniestro vial</h2>
+      </section>
+
+      <p data-reveal>Después de un siniestro vial (colisión, volcamiento o atropello), activa de inmediato el protocolo Proteger, Avisar y Socorrer (PAS).</p>
+      <p data-reveal>Sigue rigurosamente estos pasos:</p>
+
+      <!-- La lista numerada del Word (seis pasos, sin rótulo de componente), en una caja con sus números 1 a 6 (arquitecto 2026-11-20) -->
+      <div data-reveal style="margin-top:16px; padding:24px 28px; background:var(--bg-surface); border:1px solid var(--border-c); border-radius:var(--r-md);"><ol style="list-style:none; padding:0; margin:0; display:grid; gap:14px;"><li style="display:flex; gap:14px; align-items:flex-start;"><span style="min-width:32px; height:32px; background:var(--grad-brand); border-radius:8px; display:grid; place-items:center; color:white; flex-shrink:0;"><iconify-icon icon="mdi:numeric-1" style="font-size:1.5rem;"></iconify-icon></span><span style="padding-top:3px;"><strong>Asegura la zona.</strong> Detén el vehículo en un lugar seguro, enciende las luces de parqueo o estacionarias y apaga el motor.</span></li><li style="display:flex; gap:14px; align-items:flex-start;"><span style="min-width:32px; height:32px; background:var(--grad-brand); border-radius:8px; display:grid; place-items:center; color:white; flex-shrink:0;"><iconify-icon icon="mdi:numeric-2" style="font-size:1.5rem;"></iconify-icon></span><span style="padding-top:3px;"><strong>Hazte visible.</strong> Ponte el chaleco reflectivo antes de descender del vehículo.</span></li><li style="display:flex; gap:14px; align-items:flex-start;"><span style="min-width:32px; height:32px; background:var(--grad-brand); border-radius:8px; display:grid; place-items:center; color:white; flex-shrink:0;"><iconify-icon icon="mdi:numeric-3" style="font-size:1.5rem;"></iconify-icon></span><span style="padding-top:3px;"><strong>Señaliza el lugar.</strong> Instala los dos triángulos detrás del vehículo a una distancia suficiente para que quien viene alcance a reaccionar; en carretera y en curvas, más lejos.</span></li><li style="display:flex; gap:14px; align-items:flex-start;"><span style="min-width:32px; height:32px; background:var(--grad-brand); border-radius:8px; display:grid; place-items:center; color:white; flex-shrink:0;"><iconify-icon icon="mdi:numeric-4" style="font-size:1.5rem;"></iconify-icon></span><span style="padding-top:3px;"><strong>Evalúa la situación.</strong> Verifica el estado de salud de los ocupantes, priorizando a los niños. Por seguridad médica, no muevas a ninguna persona lesionada.</span></li><li style="display:flex; gap:14px; align-items:flex-start;"><span style="min-width:32px; height:32px; background:var(--grad-brand); border-radius:8px; display:grid; place-items:center; color:white; flex-shrink:0;"><iconify-icon icon="mdi:numeric-5" style="font-size:1.5rem;"></iconify-icon></span><span style="padding-top:3px;"><strong>Activa las líneas de ayuda.</strong> Comunícate de inmediato con la Línea de Emergencias 123 o con la Policía de Tránsito al #767.</span></li><li style="display:flex; gap:14px; align-items:flex-start;"><span style="min-width:32px; height:32px; background:var(--grad-brand); border-radius:8px; display:grid; place-items:center; color:white; flex-shrink:0;"><iconify-icon icon="mdi:numeric-6" style="font-size:1.5rem;"></iconify-icon></span><span style="padding-top:3px;"><strong>Notifica a la organización.</strong> Reporta el siniestro al área encargada de tu empresa.</span></li></ol></div>
+
+      <div class="ova-callout" style="margin-top:32px;" data-reveal>
+        <div class="ova-callout__ico"><iconify-icon icon="mdi:information-outline"></iconify-icon></div>
+        <div><span class="ova-callout__tag">Importante</span><p style="margin:8px 0 0;">Si el siniestro ocurre durante tu jornada laboral, es un accidente de trabajo: repórtalo de inmediato a tu jefe (ver 4.5).</p></div>
+      </div>
+
+      <!-- ════ Sección {{NUM}}.4 · tema4-4 ════ -->
+      <section class="ova-seccion" id="tema4-4" data-reveal>
+        <h2 class="ova-seccion__titulo">Qué hacer en el lugar del siniestro vial: evidencia y reporte</h2>
+      </section>
+
+      <p data-reveal>Existen dos situaciones que se deben tener presentes en el lugar del siniestro vial:</p>
+
+      <!-- El DI: "Acordeón" (dos ítems; manda el rótulo) -->
+      <div class="ova-acordeon" data-reveal style="margin-top:16px;">
+        <div class="ova-acordeon__item is-open">
+          <button class="ova-acordeon__head"><span><span class="num">01</span> <strong>Solo daños materiales</strong></span><iconify-icon class="ova-acordeon__chev" icon="mdi:chevron-down"></iconify-icon></button>
+          <div class="ova-acordeon__body"><div class="ova-acordeon__body-inner">Desde la entrada en vigencia de la Ley 2251 de 2022 (que modificó el artículo 143 del Código Nacional de Tránsito), los choques simples que no dejan lesionados ya no requieren la presencia de las autoridades de tránsito ni el tradicional croquis.</div></div>
+        </div>
+        <div class="ova-acordeon__item">
+          <button class="ova-acordeon__head"><span><span class="num">02</span> <strong>Personas lesionadas</strong></span><iconify-icon class="ova-acordeon__chev" icon="mdi:chevron-down"></iconify-icon></button>
+          <div class="ova-acordeon__body"><div class="ova-acordeon__body-inner">Si el siniestro vial deja heridos o fallecidos, la prioridad cambia por completo. Bajo ninguna circunstancia se deben mover los vehículos ni alterar la escena. Comunícate de inmediato con las líneas de emergencia (123 o #767) para la atención de las víctimas y el levantamiento del Informe Policial de Accidente de Tránsito (IPAT).</div></div>
+        </div>
+      </div>
+
+      <p data-reveal style="margin-top:32px;">Retomando cuando solo hay daños materiales:</p>
+      <p data-reveal>Ahora, la responsabilidad de recaudar las pruebas recae completamente en los conductores involucrados. Para que tu reclamación sea exitosa, sigue estos pasos:</p>
+
+      <!-- El DI: "Stepper" · cuatro pasos, título en negrilla y párrafo. El número 0N lo pone la pieza. Sin ova-step__tag -->
+      <div class="ova-stepper" data-reveal style="margin-top:16px;">
+        <div class="ova-step">
+          <div class="ova-step__num"><span>01</span></div>
+          <div class="ova-step__card"><h3><strong>Recopila evidencia inmediata</strong></h3><p>Toma fotografías detalladas y videos del lugar del siniestro, la posición de los vehículos, los daños visibles y la señalización vial. Consigue también los datos de contacto de los testigos. Este material sirve como prueba ante la aseguradora, en la conciliación o en un proceso judicial.</p></div>
+        </div>
+        <div class="ova-step">
+          <div class="ova-step__num"><span>02</span></div>
+          <div class="ova-step__card"><h3><strong>Despeja la vía</strong></h3><p>Una vez registrado el evento, retira de inmediato los vehículos para evitar multas por obstrucción del tráfico.</p></div>
+        </div>
+        <div class="ova-step">
+          <div class="ova-step__num"><span>03</span></div>
+          <div class="ova-step__card"><h3><strong>Registra los datos clave</strong></h3><p>Asegúrate de tomar fotos claras de la placa del otro vehículo, así como de la licencia de conducción, la licencia de tránsito (tarjeta de propiedad), el documento de identidad y el SOAT del otro conductor.</p></div>
+        </div>
+        <div class="ova-step">
+          <div class="ova-step__num"><span>04</span></div>
+          <div class="ova-step__card"><h3><strong>En caso de desacuerdo</strong></h3><p>Si las partes no logran conciliar los daños en el sitio, deberán acudir posteriormente a un centro de conciliación autorizado.</p></div>
+        </div>
+      </div>
+
+      <!-- Cierre del caso de partida · mismo panel que la Situación de partida, sin rótulo (el DI no lo trae; criterio del arquitecto 2026-11-20) -->
+      <div data-reveal style="margin-top:32px; padding:32px; background:linear-gradient(135deg, color-mix(in srgb, var(--c-acento) 10%, var(--bg-surface)) 0%, var(--bg-surface) 60%); border:1px solid color-mix(in srgb, var(--c-acento) 30%, var(--border-c)); border-radius:var(--r-lg); position:relative; overflow:hidden;">
+        <p style="margin:0; font-size:1.02rem; line-height:1.6;">En el caso del semáforo, ninguno de los dos conductores debía esperar al agente de tránsito: lo correcto era tomar las pruebas y retirar los vehículos de inmediato.</p>
+      </div>
+
+      <p data-reveal style="margin-top:32px;">La evidencia recopilada en el sitio no solo es crucial ante las autoridades, sino que es el insumo principal que te exigirá la aseguradora de tu póliza todo riesgo para tramitar los daños materiales. Ten presente que el SOAT cubre exclusivamente la atención médica de las personas, nunca los daños de los vehículos. Entre más completa y ordenada sea tu evidencia inicial, más rápido y fluido será el trámite de reclamación.</p>
+
+      <div class="ova-callout ova-callout--success" style="margin-top:24px;" data-reveal>
+        <div class="ova-callout__ico"><iconify-icon icon="mdi:check-circle-outline"></iconify-icon></div>
+        <div><span class="ova-callout__tag">Buena práctica</span><p style="margin:8px 0 0;">Lleva siempre en la guantera una lista impresa con los números de emergencia y una copia física de los documentos obligatorios del vehículo. En el momento de un choque, el estrés o la falta de batería en el celular no deberían ser un obstáculo para actuar correctamente.</p></div>
+      </div>
+
+      <div class="ova-callout" style="margin-top:32px;" data-reveal>
+        <div class="ova-callout__ico"><iconify-icon icon="mdi:head-question-outline"></iconify-icon></div>
+        <div><span class="ova-callout__tag">Dato curioso</span><p style="margin:8px 0 0;">En 2024 murieron 8271 personas en las vías de Colombia, casi una cada hora (Xataka Colombia, 2025). Por eso, actuar rápido y bien puede marcar la diferencia: avisa a emergencias, protege la escena y, si tienes formación en primeros auxilios, aplícalos sin mover al lesionado.</p></div>
+      </div>
+
+      <!-- ════ Sección {{NUM}}.5 · tema4-5 ════ -->
+      <section class="ova-seccion" id="tema4-5" data-reveal>
+        <h2 class="ova-seccion__titulo">Reporte e investigación del siniestro vial laboral</h2>
+      </section>
+
+      <p data-reveal>De acuerdo con la Ley 1562 de 2012, art. 3, si sufres un evento en la vía mientras conduces para cumplir con tus funciones, o durante un traslado en un transporte brindado por la empresa, el siniestro es un accidente de trabajo y tienes la cobertura del Sistema General de Riesgos Laborales.</p>
+      <p data-reveal>En caso de que ocurra, este es el paso a paso que se debe seguir:</p>
+
+      <!-- El DI: "Stepper" · cuatro pasos, título en negrilla y párrafo. El número 0N lo pone la pieza. Sin ova-step__tag -->
+      <div class="ova-stepper" data-reveal style="margin-top:16px;">
+        <div class="ova-step">
+          <div class="ova-step__num"><span>01</span></div>
+          <div class="ova-step__card"><h3><strong>Reporte inmediato</strong></h3><p>Informa de manera oportuna a tu jefe directo o al responsable del área de SST de la empresa.</p></div>
+        </div>
+        <div class="ova-step">
+          <div class="ova-step__num"><span>02</span></div>
+          <div class="ova-step__card"><h3><strong>Notificación legal</strong></h3><p>La empresa cuenta con 2 días hábiles para reportar formalmente el accidente ante la ARL y la EPS, según lo estipula el Decreto 1072 de 2015.</p></div>
+        </div>
+        <div class="ova-step">
+          <div class="ova-step__num"><span>03</span></div>
+          <div class="ova-step__card"><h3><strong>Investigación del evento</strong></h3><p>Con el fin de identificar las causas, la empresa debe investigar el siniestro dentro de los 15 días calendario siguientes a su ocurrencia. Este proceso lo realiza un equipo investigador conformado por el jefe inmediato, un representante del COPASST o el vigía de SST y el responsable del SG-SST (Resolución 1401 de 2007).</p></div>
+        </div>
+        <div class="ova-step">
+          <div class="ova-step__num"><span>04</span></div>
+          <div class="ova-step__card"><h3><strong>Lecciones aprendidas</strong></h3><p>El comité del Plan Estratégico de Seguridad Vial (PESV) registrará el siniestro y diseñará acciones correctivas y preventivas para evitar que una situación similar se repita.</p></div>
+        </div>
+      </div>
+
+      <!-- Pódcast · el Word lo trae tras 4.5, con el rótulo «Pódcast» en rojo y su frase. Va como subtítulo (arquitecto 2026-11-20); no es sección del menú.
+           DISEÑO (revisión 2026-11-20): h3 del tamaño de «Objetivo» en la presentación y a 56 px, el salto de sección, para leerse como cierre de la pantalla.
+           No hay .mp3: se reproduce desde YouTube («(Vincular pódcast)»), enlace del Word verificado (ERRORES-ORIGEN-2026-11-19 §4) -->
+      <h3 style="margin:56px 0 16px;" data-reveal>Pódcast</h3>
+      <p data-reveal>Te invitamos a escuchar el siguiente pódcast, que refuerza los aprendizajes clave del curso.</p>
+      <div class="ova-video" data-reveal style="margin-top:32px;">
+        <div class="ova-video__frame" style="position:relative; padding-top:56.25%; border-radius:var(--r-lg); overflow:hidden; background:#000;">
+          <iframe src="https://www.youtube.com/embed/g1cd6mAbwEA" title="Pódcast · Síntesis curso Seguridad vial en vehículos livianos" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen style="position:absolute; inset:0; width:100%; height:100%;"></iframe>
+        </div>
+      </div>
